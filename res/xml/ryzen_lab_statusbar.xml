@@ -26,6 +26,13 @@
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
         android:fragment="com.ryzen.lab.fragments.NetworkTrafficSettings" />
+
+    <Preference
+            android:key="icon_manager"
+            android:title="@string/icon_manager_title"
+            android:summary="@string/icon_manager_summary">
+            <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+        </Preference>
     </PreferenceCategory>
     
     <PreferenceCategory
