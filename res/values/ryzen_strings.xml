@@ -107,4 +107,8 @@
     <string name="status_bar_clock_position_left">Left</string>
     <string name="status_bar_clock_position_right">Right</string>
     <string name="status_bar_clock_position_title">Clock position</string>
+
+    <!-- Fingerprint Ripple Effect -->
+    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 </resources>
