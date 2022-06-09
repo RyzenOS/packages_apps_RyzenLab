@@ -8,3 +8,4 @@ Inside **RyzenLab** U can find All Your Needed Features.
 Credits:
 -------
  * [**Max**](https://github.com/xyyx) - For the Base, tabs & drawables.
+ * [**SuperiorOS**](https://github.com/SuperiorOS) - For the Commits
