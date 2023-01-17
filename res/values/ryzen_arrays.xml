@@ -47,4 +47,47 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+
+    <!-- Custom logo -->
+    <string-array name="status_bar_logo_position_entries" translatable="false">
+        <item>@string/status_bar_logo_left</item>
+        <item>@string/status_bar_logo_right</item>
+    </string-array>
+
+    <string-array name="status_bar_logo_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- Status bar logo style -->
+    <string-array name="status_bar_logo_style_entries" translatable="false">
+        <item>@string/status_bar_logo_style_ryzen</item>
+        <item>@string/status_bar_logo_style_apple</item>
+        <item>@string/status_bar_logo_style_avengers</item>
+        <item>@string/status_bar_logo_style_batman</item>
+        <item>@string/status_bar_logo_style_blackberry</item>
+        <item>@string/status_bar_logo_style_rog</item>
+        <item>@string/status_bar_logo_style_spider</item>
+        <item>@string/status_bar_logo_style_superman</item>
+        <item>@string/status_bar_logo_style_theflash</item>
+        <item>@string/status_bar_logo_style_ubuntu</item>
+        <item>@string/status_bar_logo_style_windows</item>
+        <item>@string/status_bar_logo_style_xbox</item>
+    </string-array>
+
+    <string-array name="status_bar_logo_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
 </resources>
