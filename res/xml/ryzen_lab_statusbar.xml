@@ -33,7 +33,13 @@
             android:summary="@string/icon_manager_summary">
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
         </Preference>
-    </PreferenceCategory>
+
+        <!-- Show logo on Statusbar -->
+    <Preference
+        android:key="status_bar_logo"
+        android:title="@string/status_bar_logo_title"
+        android:summary="@string/status_bar_logo_summary"
+        android:fragment="com.ryzen.lab.fragments.StatusBarLogo" />
    
     <com.android.settings.ryzen.preference.SystemSettingSwitchPreference
         android:key="show_fourg_icon"
@@ -75,5 +81,6 @@
         android:entries="@array/battery_percent_entries"
         android:entryValues="@array/battery_percent_values"
         android:defaultValue="0" />
-
+        
+</PreferenceCategory>
 </PreferenceScreen>
