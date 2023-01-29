@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2022 SuperiorOS
+ * Copyright (C) 2023 RyzenOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,17 +46,46 @@ import com.android.settings.SettingsPreferenceFragment;
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String KEY_GAMES_SPOOF = "use_games_spoof";
+    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
+
+    private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
+    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+
+    private SwitchPreference mGamesSpoof;
+    private SwitchPreference mPhotosSpoof;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
+<<<<<<< HEAD:src/com/ryzen/lab/fragments/MiscSettings.java
         addPreferencesFromResource(R.xml.ryzen_lab_misc);
+=======
+        addPreferencesFromResource(R.xml.superior_lab_misc);
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+>>>>>>> 58b0a81... SuperiorLab: Add Toggle for GamesProp and google photos spoof:src/com/superior/lab/fragments/MiscSettings.java
 
+        mGamesSpoof = (SwitchPreference) prefScreen.findPreference(KEY_GAMES_SPOOF);
+        mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
+        mGamesSpoof.setOnPreferenceChangeListener(this);
+
+        mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
+        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
+        mPhotosSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
+        if (preference == mGamesSpoof) {
+            boolean value = (Boolean) objValue;
+            SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
+            return true;
+        } else if (preference == mPhotosSpoof) {
+            boolean value = (Boolean) objValue;
+            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
+            return true;
+        }
         return false;
     }
 
