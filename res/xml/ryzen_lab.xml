@@ -54,14 +54,6 @@
             settings:layout="@layout/ryzen_dashboard_preference_top"
             android:icon="@drawable/ic_settings_buttons"/>
 
-        <!-- Navigation Bar -->
-        <Preference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title" 
-            android:fragment="com.ryzen.lab.fragments.NavbarSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_bottom"
-            android:icon="@drawable/ic_settings_navbar"/>
-
         <!-- Gestures -->
         <Preference
             android:key="gestures_category"
