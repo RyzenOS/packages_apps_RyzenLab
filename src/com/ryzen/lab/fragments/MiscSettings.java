@@ -63,12 +63,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-<<<<<<< HEAD:src/com/ryzen/lab/fragments/MiscSettings.java
         addPreferencesFromResource(R.xml.ryzen_lab_misc);
-=======
-        addPreferencesFromResource(R.xml.superior_lab_misc);
         final PreferenceScreen prefScreen = getPreferenceScreen();
->>>>>>> 58b0a81... SuperiorLab: Add Toggle for GamesProp and google photos spoof:src/com/superior/lab/fragments/MiscSettings.java
 
         mGamesSpoof = (SwitchPreference) prefScreen.findPreference(KEY_GAMES_SPOOF);
         mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));

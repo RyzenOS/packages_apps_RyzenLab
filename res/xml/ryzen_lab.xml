@@ -18,11 +18,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title=" " >
 
-    <!-- Lottie Animation-->
+    <!-- Lottie Animation>
     <com.android.settingslib.widget.LayoutPreference
         android:key="lab_animation"
         android:layout="@layout/lab_lottie"
-        android:selectable="false" />
+        android:selectable="false" / -->
 
     <!-- RyzenLab Header -->
     <PreferenceCategory
@@ -43,7 +43,7 @@
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.ryzen.lab.fragments.QuickSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_bottom"
+            settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
@@ -51,7 +51,7 @@
             android:key="buttonsettings_category"
             android:title="@string/button_title"
             android:fragment="com.ryzen.lab.fragments.ButtonSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_top"
+            settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Gestures -->
@@ -59,7 +59,7 @@
             android:key="gestures_category"
             android:title="@string/gestures_title" 
             android:fragment="com.ryzen.lab.fragments.GestureSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_top"
+            settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_sos_gestures"/>
 
         <!-- Lock Screen -->
@@ -67,7 +67,7 @@
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title" 
             android:fragment="com.ryzen.lab.fragments.LockScreenSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_bottom"
+            settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Power Menu -->
@@ -75,23 +75,15 @@
             android:key="powermenu__category"
             android:title="@string/powermenu_title" 
             android:fragment="com.ryzen.lab.fragments.PowerMenuSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_top"
+            settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_powermenu"/>
-
-        <!-- Recents -->
-        <Preference
-            android:key="recents_category"
-            android:title="@string/recents_title"
-            android:fragment="com.ryzen.lab.fragments.RecentsSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_bottom"
-            android:icon="@drawable/ic_settings_recents"/>
 
         <!-- Notifications -->
         <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.ryzen.lab.fragments.NotificationSettings"
-            settings:layout="@layout/ryzen_dashboard_preference_top"
+            settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->

@@ -19,7 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/network_traffic_title">
 
-    <com.android.settings.ryzen.preferences.SystemSettingMainSwitchPreference
+    <com.android.settings.ryzen.preference.SystemSettingMainSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_master_switch_title"
         android:defaultValue="false" />
@@ -27,7 +27,7 @@
     <PreferenceCategory
         android:title="@string/network_options_title">
 
-        <com.android.settings.ryzen.preferences.SystemSettingSwitchPreference
+        <com.android.settings.ryzen.preference.SystemSettingSwitchPreference
             android:key="network_traffic_autohide_threshold"
             android:title="@string/network_traffic_autohide_title"
             android:summary="@string/network_traffic_autohide_summary"

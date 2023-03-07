@@ -16,21 +16,29 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Title -->
-    <string name="ryen_lab_title">Ryzen Lab</string>
+    <string name="ryzen_lab_title">Ryzen Lab</string>
 
-    <!-- Categories -->
+
+     <!-- Categories -->
+    <string name="team_title">About Team</string>
     <string name="button_title">Buttons</string>
+    <string name="fingerprint_category">Fingerprint</string>
     <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock screen</string>
     <string name="misc_title">Miscellaneous</string>
     <string name="navbar_title">Navigation bar</string>
     <string name="powermenu_title">Power menu</string>
     <string name="quicksettings_title">Quick Settings</string>
-    <string name="recents_title">Recents apps</string>
+    <string name="themes_title">Themes</string>
     <string name="statusbar_title">Status bar</string>
-    <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
+    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
+    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
+    
     <!-- Sub category -->
     <string name="general_category">General</string>
     <string name="statusbar_icons">Icons</string>

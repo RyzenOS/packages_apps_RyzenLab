@@ -50,8 +50,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-import com.android.settings.ryzen.preferences.SystemSettingSwitchPreference;
-import com.android.settings.ryzen.preferences.SystemSettingMainSwitchPreference;
+import com.android.settings.ryzen.preference.SystemSettingSwitchPreference;
+import com.android.settings.ryzen.preference.SystemSettingMainSwitchPreference;
 
 public class NetworkTrafficSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
