@@ -58,7 +58,6 @@
         android:title="@string/roaming_indicator_icon_title"
         android:summary="@string/roaming_indicator_icon_summary"
         android:defaultValue="true"/>
-    </PreferenceCategory>
 
     <com.android.settings.ryzen.preference.SystemSettingListPreference
         android:key="status_bar_battery_style"

@@ -16,19 +16,13 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title=" " >
-
-    <!-- Lottie Animation>
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="lab_animation"
-        android:layout="@layout/lab_lottie"
-        android:selectable="false" / -->
+    android:title="@sting/ryzen_lab_title">
 
     <!-- RyzenLab Header -->
-    <PreferenceCategory
-        android:title="@string/ryzen_lab_title"
-        android:layout="@layout/ryzen_preference_category">
-    </PreferenceCategory>
+    <!-- PreferenceScreen
+        android:key="ryzenlab_logo"
+        android:layout="@layout/ryzen_dashboard_banner"
+        android:selectable="false" /-->
 
         <!-- Status Bar -->
         <Preference
