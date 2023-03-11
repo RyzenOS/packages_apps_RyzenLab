@@ -52,7 +52,7 @@
         <Preference
             android:key="gestures_category"
             android:title="@string/gestures_title" 
-            android:fragment="com.ryzen.lab.fragments.GestureSettings"
+            android:fragment="com.android.settings.gestures.GestureSettings"
             settings:layout="@layout/ryzen_dashboard_preference_middle"
             android:icon="@drawable/ic_settings_sos_gestures"/>
 
