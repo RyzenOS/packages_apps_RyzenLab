@@ -41,7 +41,6 @@
     
     <!-- Sub category -->
     <string name="general_category">General</string>
-    <string name="statusbar_icons">Icons</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
@@ -56,10 +55,6 @@
     <string name="network_options_title">Options</string>
     <string name="network_traffic_autohide_title">Hide network traffic indicator if inactive</string>
     <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1 KB/s</string>
-
-    <!-- Statusbar Tuner -->
-    <string name="statusbar_items_title">Statusbar items</string>
-    <string name="statusbar_items_summary">Tune Statusbar items</string>
 
      <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G icon</string>
